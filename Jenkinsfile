@@ -33,4 +33,16 @@ pipeline{
 		
 	}
 }
+post{
+	always{
+		echo 'triggered always'
+	
+	success{
+		echo 'triggered when build is success'
+	}
+	failure{
+		echo 'triggered always'
+	
+}}
+}
 }
